@@ -1,0 +1,44 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Live unauthenticated HTTP probes of /.well-known/* on every host named in apis.yml
+  (merlinlabs.com, investors.merlinlabs.com). No API host exists — api.merlinlabs.com,
+  docs.merlinlabs.com, developer.merlinlabs.com and app.merlinlabs.com do not resolve in DNS.
+note: >-
+  Every probed path missed. merlinlabs.com is a Gatsby marketing site that answers 404 with an
+  HTML shell for all unknown paths; investors.merlinlabs.com (Q4/gcs-web IR platform) answers
+  404 HTML or 403 Access Denied. No document was served, so NO WellKnown or SecurityTxt pointer
+  is emitted in apis.yml — this file records a verified absence, not a presence.
+hosts:
+- host: merlinlabs.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: investors.merlinlabs.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403

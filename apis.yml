@@ -1,17 +1,38 @@
 aid: merlin-labs
 name: Merlin Labs
-description: 'Merlin Labs is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Merlin (Merlin Labs, Inc., NASDAQ: MRLN) is a Boston-headquartered aerospace and defense
+  company founded in 2018 that builds takeoff-to-touchdown flight autonomy for legacy and
+  next-generation aircraft. Its product is the Merlin Pilot, an aircraft-agnostic, AI-powered
+  autonomy stack that pairs machine-learning mission planning with deterministic, hardcoded
+  fallback flight systems, and that has flown hundreds of autonomous flights from test
+  facilities in Kerikeri (New Zealand), Quonset Point (Rhode Island) and Bedford/Hanscom
+  (Massachusetts). Merlin is a prime contractor to USSOCOM for C-130J autonomy, works with
+  the U.S. Air Force on KC-135 tanker autonomy, and collaborates with Northrop Grumman,
+  Honeywell, GE Aerospace and Israel Aerospace Industries. The company holds a New Zealand
+  Part 146 aircraft design organization designation and reached Stage of Involvement 3
+  (SOI 3) with the Civil Aviation Authority of New Zealand in August 2026. Merlin became
+  publicly traded in March 2026 through a business combination with Inflection Point
+  Acquisition Corp IV. Merlin sells embedded flight-autonomy software to aircraft OEMs,
+  primes and government programs; it publishes no public developer program, API, SDK or
+  machine-readable contract.
+image: https://merlinlabs.com/share.jpg
 url: https://raw.githubusercontent.com/api-evangelist/merlin-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Aerospace
+- Aviation
+- Defense
+- Autonomy
+- Artificial Intelligence
+- Flight Software
+- Robotics
+- Public Company
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +40,66 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/merlin-labs-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/merlin-labs_stock/
+  url: https://merlinlabs.com/
+- type: Product
+  url: https://merlinlabs.com/pilot/
+- type: About
+  url: https://merlinlabs.com/company/
+- type: Blog
+  url: https://merlinlabs.com/news/
+- type: BlogRSS
+  url: https://investors.merlinlabs.com/rss/news-releases.xml
+- type: Support
+  url: https://merlinlabs.com/contact/
+- type: TermsOfService
+  url: https://merlinlabs.com/terms/
+- type: PrivacyPolicy
+  url: https://merlinlabs.com/privacy/
+- type: GitHubOrganization
+  url: https://github.com/merlinlabs
+- type: LinkedIn
+  url: https://www.linkedin.com/company/merlinlabs/
+- type: Twitter
+  url: https://x.com/MerlinAero
+- type: YouTube
+  url: https://www.youtube.com/@merlin_labs
+- type: Careers
+  url: https://merlinlabs.com/careers/
+- type: InvestorRelations
+  url: https://investors.merlinlabs.com/
+- type: SECFilings
+  url: https://investors.merlinlabs.com/financial-information/sec-filings
+- type: PressReleases
+  url: https://investors.merlinlabs.com/news-events/news-releases
+- type: LLMsTxt
+  url: llms/merlin-labs-llms.txt
+- type: Plans
+  url: plans/merlin-labs-plans-pricing.yml
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Merlin sells the Merlin Pilot as embedded flight-autonomy software inside aircraft programs
+    (USSOCOM C-130J, USAF KC-135, Northrop Grumman, Honeywell, GE Aerospace, IAI) — merlinlabs.com
+    is a six-page marketing site whose own sitemap lists only newsroom, company, careers and legal
+    pages, and api./docs./developer.merlinlabs.com do not resolve in DNS at all.
+  evidence:
+  - url: https://merlinlabs.com/sitemap-0.xml
+    status: 200
+  - url: https://merlinlabs.com/openapi.json
+    status: 404
+  - url: https://merlinlabs.com/llms.txt
+    status: 404
+  - url: https://merlinlabs.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/merlinlabs
+    status: 200
+  checked: '2026-08-25'

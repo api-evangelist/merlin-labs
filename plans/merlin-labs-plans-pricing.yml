@@ -1,0 +1,25 @@
+generated: '2026-08-25'
+method: searched
+source: https://merlinlabs.com/
+docs: https://merlinlabs.com/contact/
+plan_count: 0
+model: contract
+note: >-
+  Merlin publishes no pricing, plans, tiers or self-service sign-up of any kind. The Merlin Pilot
+  is embedded flight-autonomy software sold through aircraft programs — U.S. government contracts
+  (USSOCOM C-130J as prime, USAF KC-135) and OEM/prime partnerships (Northrop Grumman, Honeywell,
+  GE Aerospace, Israel Aerospace Industries). The only commercial calls to action on merlinlabs.com
+  are "Schedule Demo" and "Start Mission", both of which resolve to the contact form. The full
+  site map (https://merlinlabs.com/sitemap-0.xml, HTTP 200) contains no pricing page. Revenue
+  disclosure is via SEC filings as a public company (Nasdaq: MRLN), not a pricing page.
+plans: []
+evidence:
+- url: https://merlinlabs.com/
+  status: 200
+  note: no pricing navigation item; CTAs are "Schedule Demo" / "Start Mission"
+- url: https://merlinlabs.com/pilot/
+  status: 200
+  note: product page states missions and roadmap, no commercial terms
+- url: https://merlinlabs.com/sitemap-0.xml
+  status: 200
+  note: 60 URLs, all newsroom/company/careers/legal — no /pricing or /plans

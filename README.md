@@ -64,5 +64,19 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Merlin Labs is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/merlin-labs_stock/
+Merlin (Merlin Labs, Inc., Nasdaq: MRLN) is a Boston-headquartered aerospace and defense company
+founded in 2018 that builds takeoff-to-touchdown flight autonomy for legacy and next-generation
+aircraft. Its product, the Merlin Pilot, is an aircraft-agnostic AI autonomy stack sold as embedded
+flight software to aircraft OEMs, defense primes and government programs — USSOCOM C-130J (as prime),
+USAF KC-135, Northrop Grumman, Honeywell, GE Aerospace and Israel Aerospace Industries.
+
+**No public API surface.** As of 2026-08-25 Merlin publishes no developer portal, API, SDK, CLI,
+webhook or machine-readable contract. `api.`, `docs.`, `developer.` and `app.merlinlabs.com` do not
+resolve in DNS; `/openapi.json`, `/llms.txt` and every `/.well-known/*` path return 404 on both
+merlinlabs.com and investors.merlinlabs.com; and github.com/merlinlabs is a verified organization
+with zero public repositories. The only machine-readable artifacts the company publishes are the
+investor-relations RSS feeds. See `x-coverage` in `apis.yml` for the probe record.
+
+- https://merlinlabs.com/
+- https://merlinlabs.com/pilot/
+- https://investors.merlinlabs.com/
