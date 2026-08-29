@@ -16,6 +16,17 @@ description: >-
   Acquisition Corp IV. Merlin sells embedded flight-autonomy software to aircraft OEMs,
   primes and government programs; it publishes no public developer program, API, SDK or
   machine-readable contract.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://merlinlabs.com/share.jpg
 url: https://raw.githubusercontent.com/api-evangelist/merlin-labs/refs/heads/main/apis.yml
 x-type: company
