@@ -1,0 +1,21 @@
+{
+  "repo": "merlin-labs",
+  "feeds": [
+    {
+      "source": "https://merlinlabs.com/company/",
+      "feed_url": "https://merlinlabs.com/company/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://merlinlabs.com/news/",
+      "feed_url": "https://merlinlabs.com/news/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-30T22:33:40Z"
+}
